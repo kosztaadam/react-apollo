@@ -11,7 +11,7 @@ class Header extends Component {
                 <div className="flex flex-fixed black">
                     <div className="fw7 mr1">Hacker News</div>
                     <Link to="/" className="ml1 no-underline black">
-                        new
+                        news
                     </Link>
                     {authToken && (
                         <div className="flex">
@@ -21,6 +21,10 @@ class Header extends Component {
                             </Link>
                         </div>
                     )}
+                    <div className="ml1">|</div>
+                    <Link to="/search" className="ml1 no-underline black">
+                        search
+                    </Link>
                 </div>
                 <div className="flex flex-fixed">
                     {authToken ? (
